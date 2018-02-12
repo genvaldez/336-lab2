@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<?php
-    include 'inc/functions.php';
-?>
 <html>
     <head>
         <title> 777 Slot Machine </title>
@@ -9,16 +6,15 @@
             @import url("css/styles.css");
         </style>
     </head>
-    
-<div id="main">
     <body>
-        <?php
-            play();
-        ?>
-    <form>
-        <input type="submit" value="Spin!"/>
-    </form>
-        
+        <div id="main">
+            <?php
+                include 'inc/functions.php';
+                play();
+            ?>
+        <form>
+            <input type="submit" value="Spin!"/>
+        </form>
+        </div>
     </body>
-</div>
 </html>
